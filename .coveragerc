@@ -1,0 +1,7 @@
+[run]
+branch = True
+source = sigpy/*
+include = sigpy/*
+omit = */setup.py
+[report]
+include = sigpy/*
