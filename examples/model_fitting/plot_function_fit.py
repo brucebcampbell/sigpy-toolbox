@@ -73,3 +73,7 @@ ax.set_ylabel("Proportion answers '1'")
 ax.set_ylim([-0.1, 1.1])
 ax.set_xlim([-0.1, 1.1])
 fig.set_size_inches([8, 8])
+
+#fig.show()
+fig.savefig('../../figures/Contrast.png')
+print('Complete')
