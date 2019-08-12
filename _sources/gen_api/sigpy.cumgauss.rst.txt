@@ -1,0 +1,12 @@
+sigpy.cumgauss
+==============
+
+.. currentmodule:: sigpy
+
+.. autofunction:: cumgauss
+
+.. include:: sigpy.cumgauss.examples
+
+.. raw:: html
+
+    <div style='clear:both'></div>

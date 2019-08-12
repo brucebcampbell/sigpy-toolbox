@@ -1,0 +1,12 @@
+sigpy.opt_err_func
+==================
+
+.. currentmodule:: sigpy
+
+.. autofunction:: opt_err_func
+
+.. include:: sigpy.opt_err_func.examples
+
+.. raw:: html
+
+    <div style='clear:both'></div>

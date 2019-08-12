@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>sigpy.transform_data &#8212; sigpy 0.1 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="sigpy.cumgauss" href="sigpy.cumgauss.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="sigpy-transform-data">
+<h1>sigpy.transform_data<a class="headerlink" href="#sigpy-transform-data" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="sigpy.transform_data">
+<code class="sig-prename descclassname">sigpy.</code><code class="sig-name descname">transform_data</code><span class="sig-paren">(</span><em class="sig-param">data</em><span class="sig-paren">)</span><a class="headerlink" href="#sigpy.transform_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function that takes experimental data and gives us the
+dependent/independent variables for analysis.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>data</strong><span class="classifier">Pandas DataFrame or string.</span></dt><dd><p>If this is a DataFrame, it should have the columns <cite>contrast1</cite> and
+<cite>answer</cite> from which the dependent and independent variables will be
+extracted. If this is a string, it should be the full path to a csv
+file that contains data that can be read into a DataFrame with this
+specification.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>x</strong><span class="classifier">array</span></dt><dd><p>The unique contrast differences.</p>
+</dd>
+<dt><strong>y</strong><span class="classifier">array</span></dt><dd><p>The proportion of ‘2’ answers in each contrast difference</p>
+</dd>
+<dt><strong>n</strong><span class="classifier">array</span></dt><dd><p>The number of trials in each x,y condition</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="section" id="examples-using-sigpy-transform-data">
+<h2>Examples using <code class="docutils literal notranslate"><span class="pre">sigpy.transform_data</span></code><a class="headerlink" href="#examples-using-sigpy-transform-data" title="Permalink to this headline">¶</a></h2>
+<div class="sphx-glr-thumbcontainer" tooltip="sigpy contains a number of tools for fitting functions to data. This example shows us how to lo..."><div class="figure align-default" id="id1">
+<img alt="../_images/sphx_glr_plot_function_fit_thumb.png" src="../_images/sphx_glr_plot_function_fit_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../auto_examples/model_fitting/plot_function_fit.html#sphx-glr-auto-examples-model-fitting-plot-function-fit-py"><span class="std std-ref">Fitting a function with sigpy</span></a></span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+</div><div style='clear:both'></div></div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/logo.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">sigpy.transform_data</a><ul>
+<li><a class="reference internal" href="#examples-using-sigpy-transform-data">Examples using <code class="docutils literal notranslate"><span class="pre">sigpy.transform_data</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2015, Ariel Rokem.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/gen_api/sigpy.transform_data.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

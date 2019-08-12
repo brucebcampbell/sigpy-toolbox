@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>sigpy.Model &#8212; sigpy 0.1 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="API" href="../api.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="sigpy-model">
+<h1>sigpy.Model<a class="headerlink" href="#sigpy-model" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="sigpy.Model">
+<em class="property">class </em><code class="sig-prename descclassname">sigpy.</code><code class="sig-name descname">Model</code><span class="sig-paren">(</span><em class="sig-param">func=&lt;function cumgauss&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#sigpy.Model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class for fitting cumulative Gaussian functions to data</p>
+<p class="rubric">Methods</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#sigpy.Model.fit" title="sigpy.Model.fit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit</span></code></a>(self, x, y[, initial])</p></td>
+<td><p>Fit a Model to data.</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="sigpy.Model.__hash__">
+<code class="sig-name descname">__hash__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">/</em><span class="sig-paren">)</span><a class="headerlink" href="#sigpy.Model.__hash__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return hash(self).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sigpy.Model.fit">
+<code class="sig-name descname">fit</code><span class="sig-paren">(</span><em class="sig-param">self, x, y, initial=[0.5, 1]</em><span class="sig-paren">)</span><a class="headerlink" href="#sigpy.Model.fit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fit a Model to data.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>x</strong><span class="classifier">float or array</span></dt><dd><p>The independent variable: contrast values presented in the
+experiment</p>
+</dd>
+<dt><strong>y</strong><span class="classifier">float or array</span></dt><dd><p>The dependent variable</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl>
+<dt><strong>fit</strong><span class="classifier"><code class="xref py py-class docutils literal notranslate"><span class="pre">Fit</span></code> instance</span></dt><dd><p>A <code class="xref py py-class docutils literal notranslate"><span class="pre">Fit</span></code> object that contains the parameters of the model.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<div class="section" id="examples-using-sigpy-model">
+<h2>Examples using <code class="docutils literal notranslate"><span class="pre">sigpy.Model</span></code><a class="headerlink" href="#examples-using-sigpy-model" title="Permalink to this headline">¶</a></h2>
+<div class="sphx-glr-thumbcontainer" tooltip="sigpy contains a number of tools for fitting functions to data. This example shows us how to lo..."><div class="figure align-default" id="id1">
+<img alt="../_images/sphx_glr_plot_function_fit_thumb.png" src="../_images/sphx_glr_plot_function_fit_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../auto_examples/model_fitting/plot_function_fit.html#sphx-glr-auto-examples-model-fitting-plot-function-fit-py"><span class="std std-ref">Fitting a function with sigpy</span></a></span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Next we&#x27;ll show off another demonstration of model fitting with sigpy. We&#x27;ll generate a bunch o..."><div class="figure align-default" id="id2">
+<img alt="../_images/sphx_glr_plot_function_stability_thumb.png" src="../_images/sphx_glr_plot_function_stability_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../auto_examples/model_fitting/plot_function_stability.html#sphx-glr-auto-examples-model-fitting-plot-function-stability-py"><span class="std std-ref">Plotting model stability</span></a></span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+</div><div style='clear:both'></div></div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/logo.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">sigpy.Model</a><ul>
+<li><a class="reference internal" href="#examples-using-sigpy-model">Examples using <code class="docutils literal notranslate"><span class="pre">sigpy.Model</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2015, Ariel Rokem.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/gen_api/sigpy.Model.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,12 @@
+sigpy.transform_data
+====================
+
+.. currentmodule:: sigpy
+
+.. autofunction:: transform_data
+
+.. include:: sigpy.transform_data.examples
+
+.. raw:: html
+
+    <div style='clear:both'></div>
