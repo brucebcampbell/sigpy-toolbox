@@ -22,6 +22,7 @@ share it with others, test it, document it, and track its evolution.
 
 The project has the following structure:
 
+```
 ├── coverage.xml
 ├── data
 │   ├── phoneme.data
@@ -76,7 +77,7 @@ The project has the following structure:
     │   ├── __init__.py
     │   └── test_sigpy.py
     └── version.py
-
+```
 
 In the following sections we will examine these elements one by one. First,
 let's consider the core of the project. This is the code inside of
