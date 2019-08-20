@@ -8,7 +8,7 @@ will make it easier for others to use your code, and can make it easier for you
 to port your code into other projects and collaborate with other users of this
 eco-system.
 
-To use it as a template for your own project, click the green "use this template" 
+To use it as a template for your own project, click the green "use this template"
 button at the top of the front page of this repo.
 
 First, let me explain all the different moving parts that make up a small
@@ -19,31 +19,60 @@ share it with others, test it, document it, and track its evolution.
 
 The project has the following structure:
 
-    sigpy/
-      |- README.md
-      |- sigpy/
-         |- __init__.py
-         |- sigpy.py
-         |- due.py
-         |- data/
-            |- ...
-         |- tests/
-            |- ...
-      |- doc/
-         |- Makefile
-         |- conf.py
-         |- sphinxext/
-            |- ...
-         |- _static/
-            |- ...
-      |- setup.py
-      |- .travis.yml
-      |- .mailmap
-      |- appveyor.yml
-      |- LICENSE
-      |- Makefile
-      |- ipynb/
-         |- ...
+├── coverage.xml
+├── data
+│   ├── phoneme.data
+│   └── readme.md
+├── doc
+│   ├── api.rst
+│   ├── conf.py
+│   ├── index.rst
+│   ├── Makefile
+│   ├── sphinxext
+│   │   ├── docscrape.py
+│   │   ├── docscrape_sphinx.py
+│   │   ├── github.py
+│   │   ├── math_dollar.py
+│   │   └── numpydoc.py
+│   ├── _static
+│   │   ├── git.png
+│   │   ├── logo.png
+│   │   └── RTD-advanced-conf.png
+│   ├── _templates
+│   │   ├── class.rst
+│   │   └── function.rst
+│   └── theory.rst
+├── examples
+│   ├── model_fitting
+│   │   ├── plot_function_fit.py
+│   │   ├── plot_function_stability.py
+│   │   └── README.txt
+│   ├── README.txt
+│   └── sg_tutorial
+│       ├── plot_sg_tutorial.py
+│       └── README.txt
+├── figures
+│   └── Contrast.png
+├── LICENSE
+├── Makefile
+├── Readme.md
+├── README.md
+├── requirements-dev.txt
+├── requirements.txt
+├── scripts
+│   └── Figure1.ipynb
+├── setup.py
+└── sigpy
+    ├── data
+    │   ├── ortho.csv
+    │   └── para.csv
+    ├── due.py
+    ├── __init__.py
+    ├── sigpy.py
+    ├── tests
+    │   ├── __init__.py
+    │   └── test_sigpy.py
+    └── version.py
 
 
 In the following sections we will examine these elements one by one. First,
@@ -454,8 +483,8 @@ the tests might look like.
 To use this repository as a template, click the green "use this template"
 button on the front page of the "sigpy" repository.
 
-In "Repository name" enter the name of your project. For example, enter 
-`smallish` here. After that, you can hit the "Create repository from template" 
+In "Repository name" enter the name of your project. For example, enter
+`smallish` here. After that, you can hit the "Create repository from template"
 button.
 
 You should then be able to clone the new repo into your machine. You will want
