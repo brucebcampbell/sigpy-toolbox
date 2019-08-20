@@ -14,7 +14,6 @@ deploy:
 python:
   - '3.6'
 
-
 install:
 - travis_retry pip install sphinx
 - travis_retry pip install sphinx_gallery
@@ -24,7 +23,6 @@ install:
 - travis_retry pip install -r requirements.txt
 - travis_retry pip install -e .
 
-
 script:
 - flake8 --ignore N802,N806 `find . -name \*.py | grep -v setup.py | grep -v version.py | grep -v __init__.py | grep -v /doc/`
 - mkdir for_test
@@ -33,7 +31,6 @@ script:
 - cd /home/travis/build/brucebcampbell/sigpy-toolbox/doc
 - make html
 - touch _build/html/.nojekyll
-- codecov
 
 deploy:
   provider: pages
@@ -45,7 +42,7 @@ deploy:
     branch: master
 
 after_success:
-- coveralls
+- codecov
 
 notifications:
   slack: aloidiasolutions:wK07bxfNlwQ5Biau7Brvh9O1
