@@ -1,5 +1,9 @@
 ## sigpy
-[![Build Status](https://travis-ci.org/uwescience/sigpy.svg?branch=master)](https://travis-ci.org/uwescience/sigpy)
+
+
+[![Build Status](https://travis-ci.com/brucebcampbell/sigpy-toolbox.svg?branch=master)](https://travis-ci.com/brucebcampbell/sigpy-toolbox.svg?branch=master)
+
+[![codecov](https://codecov.io/gh/brucebcampbell/sigpy-toolbox/branch/master/graph/badge.svg)](https://codecov.io/gh/brucebcampbell/sigpy-toolbox)
 
 sigpy is a template project for small scientific python projects. The
 recommendations we make here follow the standards and conventions of much of
